@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5rem;
+        }
+
+        #H1-6 {
+            color: #fff;
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+
+        #p {
+            color: #fff;
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HTML Elements Guide</h1>
+        <p>Your complete guide to HTML elements.</p>
+    </header>
+    <nav>
+        <a href="#headings">Headings</a>
+        <a href="#paragraphs">Paragraphs</a>
+        <a href="#links">Links</a>
+        <a href="#images">Images</a>
+        <a href="#videos">Videos</a>
+        <a href="#tables">Tables</a>
+        <a href="#forms">Forms</a>
+    </nav>
+    <main>
+        <section id="headings">
+            <h2>Headings</h2>
+            <p>HTML provides six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.</p>
+            <pre>
+&lt;h1&gt;This is an H1 Heading&lt;/h1&gt;
+&lt;h2&gt;This is an H2 Heading&lt;/h2&gt;
+...
+&lt;h6&gt;This is an H6 Heading&lt;/h6&gt;
+<button id="H1-6">More info</button>
+            </pre>
+        </section>
+
+        <section id="paragraphs">
+            <h2>Paragraphs</h2>
+            <p>Paragraphs are created using the <code>&lt;p&gt;</code> element.</p>
+            <pre>
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+            </pre>
+            <button id="p">More info</button>
+        </section>
+
+        <section id="links">
+            <h2>Links</h2>
+            <p>Links are created using the <code>&lt;a&gt;</code> element.</p>
+            <pre>
+&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+            </pre>
+        </section>
+
+        <section id="images">
+            <h2>Images</h2>
+            <p>Images are added using the <code>&lt;img&gt;</code> element.</p>
+            <pre>
+&lt;img src="image.jpg" alt="Description of image"&gt;
+            </pre>
+        </section>
+        <section id="videos">
+            <h2>Videos</h2>
+            <p>Videos are added using the <code>&lt;video&gt;</code> element</p>
+            <pre>
+&lt;video&gt;
+&lt;source src="vid.mp4"&gt; 
+&lt;/video&gt;
+            </pre>
+        </section>
+        <section id="tables">
+            <h2>Tables</h2>
+            <p>Tables are created using the <code>&lt;table&gt;</code> element.</p>
+            <pre>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+            </pre>
+        </section>
+
+        <section id="forms">
+            <h2>Forms</h2>
+            <p>Forms are created using the <code>&lt;form&gt;</code> element.</p>
+            <pre>
+&lt;form action="submit.html" method="POST"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+            </pre>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 HTML Elements Guide</p>
+    </footer>
+</body>
+<script>
+    document.getElementById("H1-6").addEventListener("click", function () {
+        open("h1-6.html", "_blank");
+    });
+    document.getElementById("p").addEventListener("click", function () {
+        open("p.html", "_blank");
+    });
+</script>
+
+</html>
